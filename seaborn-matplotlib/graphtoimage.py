@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 from io import BytesIO
 
-
 class GraphImages:
     @staticmethod
     def trendGraph(raw_data):
@@ -29,5 +28,4 @@ class GraphImages:
         plt.savefig(buffer, transparent = True, bbox_inches = 'tight', format="png")
         plt.close()
         return buffer.getvalue()
-
     
